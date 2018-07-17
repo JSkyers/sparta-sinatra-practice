@@ -1,0 +1,7 @@
+ <h1>Welcome to the homepage</h1>
+ <% @games.each do |game| %>
+ <div class="">
+   <h1><%= game[:title] %></h1>
+   <p><%= game[:body] %></p>
+ </div>
+ <% end %>
