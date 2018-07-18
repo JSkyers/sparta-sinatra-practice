@@ -2,7 +2,7 @@ class Post
   attr_accessor :id, :title, :body
 
   def self.open_connection
-    conn = PG.connect(dbname: "blog", user: "postgres", password: "Acad3my1")
+    conn = PG.connect(dbname: "blog", user: "postgres", password: "dragon12")
   end
 
   def self.all
