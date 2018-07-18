@@ -1,5 +1,9 @@
 require "sinatra"
 require "sinatra/contrib"
-require_relative "controllers/games_controllers.rb"
+require "sinatra/reloader" if development?
+require "pg"
+require_relative "controllers/posts_controller.rb"
+require_relative "models/post.rb"
 
-run GamesController
+use Rack::MethodOverride
+run PostsController
