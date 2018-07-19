@@ -8,23 +8,6 @@ class PostsController < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
   end
-
-  # $posts = [{
-  #   	 id: 0,
-  #   	 title: "Post 1",
-  #   	 body: "This is the first post"
-  #   },
-  #   {
-  #       id: 1,
-  #       title: "Post 2",
-  #       body: "This is the second post"
-  #   },
-  #   {
-  #       id: 2,
-  #       title: "Post 3",
-  #       body: "This is the third post"
-  #   }];
-
   # INDEX
   get "/" do
     @title = "Blog Posts"
